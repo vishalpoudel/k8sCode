@@ -21,6 +21,6 @@ sh 'echo "Tests passed"'
 
 stage( 'Push image'){
 
-docker.with Registry ('https://registry.hub.docker.com', 'dockerhub){
+docker.with Registry ('https://registry.hub.docker.com', 'dockerhub'){
     app.push("${env.BUILD_NUIMBER}")
 }
