@@ -8,7 +8,7 @@ checkout scm
 }
 stage( 'Build image'){
 
-app = docker.build ("vishalpoudel96/test")
+app = docker.build ("vishalpoudel96/modified_by_jenkins")
 }
 stage('Test image'){
 
